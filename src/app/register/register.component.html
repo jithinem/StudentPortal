@@ -1,0 +1,29 @@
+<div class="r1" style="text-align: center; color: rgb(38, 63, 92);">
+    <h2>Luminar Institute of Technology, Ernakulam</h2><br><br><br>
+</div>
+<form action="" class="r2 border border-3 border-dark">
+    <div class="r3 pt-4" style="text-align: center;">
+        <h3>Student Registration Portal for M-Tech</h3>
+    </div><br>
+    <div class="r4" style="margin-left: 100px;  ">
+        <input [(ngModel)]="mob" name="mob" style="width: 300px; height: 40px;" type="text" placeholder="Mobile Number" class=" border
+        rounded">
+    </div><br>
+    <div class="r4" style="margin-left: 100px;  ">
+        <input [(ngModel)]="email" name="email" style="width: 300px; height: 40px;" type="text" placeholder="Email id" class=" border
+        rounded">
+    </div><br>
+    <div class="r4" style="margin-left: 100px;  ">
+        <input [(ngModel)]="uname" name="uname" style="width: 300px; height: 40px;" type="text" placeholder="Username" class=" border
+        rounded">
+    </div><br>
+    <div class="r4" style="margin-left: 100px;  ">
+        <input [(ngModel)]="pswd" name="pswd" style="width: 300px; height: 40px;" type="text" placeholder="Password" class=" border
+        rounded">
+    </div><br>
+    <button (click)="register()" style="margin-left: 150px; width: 200px;" class="border rounded bg-success ">Register</button>
+    <br><br>
+    <div class="p-2">Already registered? <a routerLink="" style="text-decoration: none;">Go to Login</a></div>
+</form>
+
+

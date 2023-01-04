@@ -1,0 +1,37 @@
+.r1{
+    width: 1300px;
+    background-color: skyblue;
+    margin: auto;
+    border: black 3px solid;
+    margin-top: 20px;
+}
+.r2{
+    text-align: center;
+}
+.col-6{
+    width: 600px;
+}
+.r31,.r32{
+    width: 750px;
+}
+.r31{
+    background-color: rgb(193, 153, 153);
+}
+.r32{
+    background-color: rgb(58, 66, 74);
+}
+.r321{
+    background-color: rgb(74, 113, 74);
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    height: 100px;
+    width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+.final:hover{
+    background-color: rgb(152, 236, 26);
+    box-shadow: 2px 2px 2px;
+    border: 5px ridge rgb(39, 243, 12);
+}

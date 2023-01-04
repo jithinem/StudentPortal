@@ -1,0 +1,26 @@
+<div class="r1" style="text-align: center; color: rgb(38, 92, 74);">
+    <h2>Luminar Institute of Technology, Ernakulam</h2><br><br><br>
+</div>
+<form action="" class="r2 border border-3 border-dark">
+    <div class="r3 pt-4" style="text-align: center;">
+        <h3>Welcome to Student Portal for M-Tech</h3>
+        <h5>Login</h5>
+    </div><br>
+    <div class="r4" style="margin-left: 100px;  ">
+        <input [(ngModel)]="uname" name="uname" style="width: 300px;" type="text" placeholder="Username" class=" border
+        rounded">
+    </div><br>
+    <div class="r5" style="margin-left: 100px;  ">
+        <input [(ngModel)]="pswd" name="pswd" style="width: 300px;" type="password" placeholder="Password" class=" border
+        rounded">
+    </div>
+    <div class="r6" style="display: flex;">
+        <div class="r61"><input type="checkbox" style="margin-left: 100px;"> Remember me
+        </div>
+        <div class="r62"><a href="" style="margin-left: 60px;text-decoration: none;">Forget Password</a></div>
+    </div><br>
+    <button (click)="login()" style="margin-left: 150px; width: 200px;" class="border rounded bg-success">Login</button>
+    <br><br><br><br>
+    <div class="r7 pb-3 ps-2">New User? <a routerLink="register" style="text-decoration: none;">Register here</a></div>
+</form>
+
