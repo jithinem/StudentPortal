@@ -1,0 +1,54 @@
+<h2 style="text-align: center; color: salmon;" class="mt-4">Your saved details</h2>
+<div class="tab1" style="top: 50%; left: 50%;">
+    <table >
+        <thead>
+            <th>Subjects</th>
+            <th>Entered details</th>
+        </thead>
+        <tbody *ngIf="preview">
+            <tr>
+                <td>First Name</td>
+                <td>{{preview.gr.fname}}</td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>{{preview.gr.lname}}</td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>{{preview.gr.gender}}</td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td>{{preview.gr.dob}}</td>
+            </tr>
+            <tr>
+                <td>Nationality</td>
+                <td>{{preview.gr.nation}}</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>{{preview.gr.add}}</td>
+            </tr>
+            <tr>
+                <td>Qualification</td>
+                <td>{{preview.gr.quali}}</td>
+            </tr>
+            <tr>
+                <td>Gate Score</td>
+                <td>{{preview.gr.gs}}</td>
+            </tr>
+            <tr>
+                <td>Gate Rank</td>
+                <td>{{preview.gr.gr}}</td>
+            </tr>
+            <tr>
+                <td>Enrollment Date</td>
+                <td>{{preview.gr.date}}</td>
+            </tr>
+
+
+            
+        </tbody>
+    </table>
+</div>

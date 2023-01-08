@@ -7,15 +7,15 @@
             <div class="r31">
                 <div class="r311 my-2">
                     <label for="">First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text">    
+                    <input [(ngModel)]="fname" name="fname" type="text">    
                 </div>
                 <div class="r311 my-2">
-                    <label for="">Last Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text">    
+                    <label  for="">Last Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input [(ngModel)]="lname" name="lname" type="text">    
                 </div>
                 <div class="r311 my-2">
                     <label for="">Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <select name="" id="">
+                    <select [(ngModel)]="gender" name="gender" id="">
                         <option value="">Select</option>
                         <option value="">Male</option>
                         <option value="">Female</option>
@@ -24,11 +24,11 @@
                 </div>
                 <div class="r311 my-2">
                     <label for="">Date of Birth &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="date">    
+                    <input [(ngModel)]="dob" name="dob" type="date">    
                 </div>
                 <div class="r311 my-2">
                     <label for="">Nationality &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <select name="" id="">
+                    <select [(ngModel)]="nation" name="nation" id="">
                         <option value="">Select</option>
                         <option value="">Indian</option>
                         <option value="">Others</option>
@@ -36,13 +36,13 @@
                 </div>
                 <div class="r311 my-2" style="display: flex;">
                     <div><label for="">Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></div>
-                    <div><textarea name="" id="" cols="30" rows="3"></textarea></div>
+                    <div><textarea [(ngModel)]="add" name="add" id="" cols="30" rows="3"></textarea></div>
                     
                     
                 </div>
                 <div class="r311 my-2">
                     <label for="">Qualification &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <select name="" id="">
+                    <select [(ngModel)]="quali" name="quali" id="">
                         <option value="">Select</option>
                         <option value="">B-tech/BE Mechanical</option>
                         <option value="">B-tech/BE Electrical</option>
@@ -55,15 +55,15 @@
                 </div>
                 <div class="r311 my-2">
                     <label for="">Gate score &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="number">    
+                    <input [(ngModel)]="gs" name="gs" type="number">    
                 </div>
                 <div class="r311 my-2">
                     <label for="">Gate Rank&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text">    
+                    <input [(ngModel)]="gr" name="gr" type="text">    
                 </div>
                 <div class="r311 my-2">
-                    <label for="">Enrollment Date&nbsp;&nbsp;&nbsp;</label>
-                    <input type="date">    
+                    <label  for="">Enrollment Date&nbsp;&nbsp;&nbsp;</label>
+                    <input [(ngModel)]="date" name="date" type="date">    
                 </div>
             </div>
             <div class="r32">
@@ -82,9 +82,9 @@
             </div>
         </div>
         <div class="" style=" text-align: center;">
-            <button style="width: 200px; background-color: rgb(23, 227, 166);" class=" final my-4">Save</button>
+            <button style="width: 200px; background-color: rgb(23, 227, 166);" class=" final my-4" (click)="save()">Save</button>
             <br>
-            <button style="width: 200px; background-color: rgb(23, 227, 166);" class=" final my-4">Preview</button>
+            <button style="width: 200px; background-color: rgb(23, 227, 166);" class=" final my-4" routerLink="/preview" >Preview</button>
         </div>
     </form>
 </div>

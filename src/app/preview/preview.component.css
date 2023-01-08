@@ -1,0 +1,8 @@
+table,thead,td,th{
+    border: black solid 3px;
+    padding: 5px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: auto;
+    margin-top: 100px;
+}
